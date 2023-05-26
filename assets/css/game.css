@@ -58,3 +58,34 @@ h1 {
     font-weight: bold;
     margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+
+    .choice-container {
+        min-width: 15rem;
+    }
+
+    #question {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 415) {
+
+    .choice-container {
+        min-width: 13rem;
+    }
+
+    .choice-text {
+        padding: auto;
+    }
+
+    #question {
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+}
