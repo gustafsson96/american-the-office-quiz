@@ -1,5 +1,5 @@
 const question = document.querySelector('#question');
-const choices = Array.from(document.querySelectorAll('.choice-text'));
+const alternatives = Array.from(document.querySelectorAll('.choice-text'));
 const scoreText = document.querySelector('#score');
 
 let currentQuestion = {};
@@ -90,3 +90,34 @@ let questions = [
         answer: 2,
     }
 ];
+
+const SCORE_POINTS = 10;
+const MAX_QUESTIONS = 10;
+
+function startGame() {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    newQuestion();
+}
+
+function newQuestion() {
+    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', score);
+
+        return window.location.assign('/end.html');
+    }
+
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionsIndex];
+    question.innerText = currentQuestion.question;
+
+    alternatives.forEach(alternative => {
+        const number = alternative.dataset['number'];
+        alternative.innerText = currentQuestion['alternative' + number];
+    });
+
+    availableQuestions.splice(questionsIndex, 1);
+
+    acceptingAnswers = true;
+}
