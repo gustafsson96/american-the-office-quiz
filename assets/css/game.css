@@ -1,0 +1,60 @@
+h1 {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+}
+
+.choice-container {
+    display: flex;
+    max-width: 90%;
+    min-width: 20rem;
+    padding: 1rem;
+    margin: 1rem;
+    color: black;
+}
+
+.choice-prefix {
+    padding: 0.2rem 1rem;
+    font-weight: bold;
+}
+
+.choice-text {
+    padding: 0.4rem 1rem;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.correct {
+    background: #0FFF50;
+    border: 2.5px solid #0FFF50;
+    box-shadow: none;
+}
+
+.correct:hover {
+    border: 2.5px solid #0FFF50;
+    box-shadow: 2px 2px 2px #0FFF50;
+}
+
+.incorrect {
+    background: #FF3131;
+}
+
+.incorrect:hover {
+    border: 2.5px solid #FF3131;
+    box-shadow: 2px 2px 2px #FF3131;
+}
+
+.score-prefix {
+    color: orange;
+    font-weight: bold;
+}
+
+#score {
+    color: orange;
+}
+
+#question {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}

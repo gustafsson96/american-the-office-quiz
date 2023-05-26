@@ -1,4 +1,4 @@
-# The Offie Quiz (American Version)
+# The Office Quiz (American Version)
 
 This is a ten question quiz for fans of the American version of the popular sitcom The Office.
 
