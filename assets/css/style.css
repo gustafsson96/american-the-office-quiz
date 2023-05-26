@@ -60,3 +60,75 @@ h1 {
     border: 2.5px solid orange;
     box-shadow: 2px 2px 2px orange;
 }
+
+/* extra styling to end page */
+
+.btn-end {
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem 0;
+    max-width: 90%;
+    min-width: 20rem;
+}
+
+.finalscore-text {
+    color: orange;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        padding: 3rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn-home {
+        font-size: 1rem;
+        padding: 1rem 7rem;
+        min-width: 7rem;
+    }
+
+    .btn-end {
+        font-size: 1rem;
+        min-width: 15rem;
+    }
+
+    .finalscore-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+
+    .container {
+        padding: 2.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn-home {
+        font-size: 1rem;
+        padding: 1rem 6rem;
+        min-width: 6rem;
+    }
+
+    .btn-end {
+        font-size: 1rem;
+        min-width: 10rem;
+    }
+
+    .finalscore-text {
+        font-size: 1rem;
+    }
+}
