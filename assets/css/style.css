@@ -22,7 +22,11 @@ body {
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 1.5rem;
+}
+
+.description {
+    font-weight: bold;
+    padding: 0.5rem;
 }
 
 .container {

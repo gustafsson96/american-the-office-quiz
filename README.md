@@ -14,11 +14,9 @@ This is a ten question quiz for fans of the American version of the popular sitc
 
 #### Home Page
 
-  * The landing page of the quiz consists of two things: a short heading that informs the user what both the page and the quiz is about, and a clickable "PLAY" button that will start the quiz. The background image is colorful and shows characters from the tv show, and I therefore wanted to keep the container for the heading and button simple to make it clear to the user.
- 
- * Add short description?
-      
-(SCREENSHOT OF HOME PAGE)
+  * The home page consists of a heading, a short but clear description of the quiz, and a clickable "PLAY" button that will start the game. The background image is colorful and shows characters from the tv show, and the container holding the content has therefore been kept simple to make it easy to read.
+
+![Screenshot of home page](/documentation/home-page-screenshot.png)
 
 #### Quiz Page
 
