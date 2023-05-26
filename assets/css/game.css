@@ -59,6 +59,8 @@ h1 {
     margin-bottom: 2rem;
 }
 
+/* media queries */
+
 @media screen and (max-width: 600px) {
 
     .choice-container {
