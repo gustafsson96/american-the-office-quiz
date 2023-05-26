@@ -1,6 +1,6 @@
 # The Office Quiz (American Version)
 
-This is a ten question quiz for fans of the American version of the popular sitcom The Office.
+This 10 questions quiz is for anyone who has watched the sticom The Office (American version) and wants to test their knowledge. 
 
 (SCREENSHOT OF AMIRESPONSIVE)
 
@@ -50,7 +50,21 @@ This is a ten question quiz for fans of the American version of the popular sitc
 
 click text, fixed by pointer.
 
+* To establish the accessibility of the quiz I ran a devtool lighthouse report that generated the following result:
+
+![Screenshot of lighthouse report](/documentation/lighthouse-report-screenshot.png)
+
 ### Validator Testing
+
+* HTML
+    * The official W3C validator returned no errors.
+
+![Screenshot of W3C validator result](/documentation/html-validator-test-screenshot.png)
+
+* CSS
+   * The official Jigsaw validator returned no errors. 
+
+![Screenshot of jigsaw validator result](/documentation/css-validator-text-screenshot.png)
 
 ### Unfixed Bugs
 
