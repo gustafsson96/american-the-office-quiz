@@ -44,7 +44,7 @@ let questions = [
     {
         question: 'Kevin claims he is famous for what dish?',
         alternative1: 'Tacos',
-        calternative2: 'Pork Ribs',
+        alternative2: 'Pork Ribs',
         alternative3: 'Chicken Alfredo',
         alternative4: 'Chili',
         answer: 4,

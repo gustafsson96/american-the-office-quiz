@@ -84,7 +84,7 @@ h1 {
 .finalscore-text {
     font-size: 2rem;
     font-weight: bold;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 /* media queries */
