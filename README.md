@@ -6,7 +6,7 @@ This is a ten question quiz for fans of the American version of the popular sitc
 
 ## Planning
 
-(ADD IMAGE OF PLANNING)
+![Image of wireframe](/documentation/wireframe-image.png)
 
 ## Features
 
@@ -24,9 +24,10 @@ This is a ten question quiz for fans of the American version of the popular sitc
 
 * **Score Counter**
 
-  * At the top of the question container, the user can keep track of the scores. As presented on the home page, a correct answer will give the user 10 points and the score counter will update accordingly.
+  * At the top of the question container, the user can keep track of the score. As presented on the home page, a correct answer will give the user 10 points and the score counter will update accordingly (the score counter does not change size even though the presented screenshots make it looks like it does). 
 
 ![Screenshot of score counter](/documentation/score-counter-screenshot.png)
+![Screenshot of updated score counter](/documentation/score-counter-updated-screenshot.png)
 
 * **Question and Alternatives**
 
@@ -39,7 +40,7 @@ This is a ten question quiz for fans of the American version of the popular sitc
 
 ![Screenshot of end page](/documentation/end-page-screenshot.png)
 
-* After the user has answered all ten questions, the end page will show up automatically. The end page will present the final score and give the user the alternative to either play again or go back to the home page. 
+* After the user has answered all ten questions, the end page will show up automatically. The end page will present the final score and gives the user the alternative to click two different buttons, either play again or go back to the home page. 
 
 ### Features to Implement
 
@@ -54,6 +55,13 @@ click text, fixed by pointer.
 ### Unfixed Bugs
 
 ## Deployment
+
+I deployed the application to GitHub pages using the following process:
+
+1. Open up the GitHub repositry for the project.
+2. Click the Settings tab and navigate to Pages in the menu to the left of the screen.
+3. Under Branch, select "main" in the dropdown menu and click Save.
+4. Refresh page to find the link to the live website at the top of the GitHub Pages section.
 
 ## Credits
 
