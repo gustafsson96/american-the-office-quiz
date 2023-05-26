@@ -75,10 +75,16 @@ h1 {
     min-width: 20rem;
 }
 
-.finalscore-text {
+.finalscore-prefix {
     color: orange;
     font-size: 2rem;
     font-weight: bold;
+}
+
+.finalscore-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
 }
 
 /* media queries */
