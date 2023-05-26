@@ -113,7 +113,7 @@ function newQuestion() {
     question.innerText = currentQuestion.question;
 
     alternatives.forEach(alternative => {
-        const number = alternative.dataset['number'];
+        const number = alternative.dataset.number;
         alternative.innerText = currentQuestion['alternative' + number];
     });
 
@@ -128,7 +128,7 @@ alternatives.forEach(alternative => {
 
         acceptingAnswers = false;
         const selectedAlternative = e.target;
-        const selectedAnswer = selectedAlternative.dataset['number'];
+        const selectedAnswer = selectedAlternative.dataset.number;
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
