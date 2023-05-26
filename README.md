@@ -6,13 +6,43 @@ This is a ten question quiz for fans of the American version of the popular sitc
 
 ## Planning
 
+(ADD IMAGE OF PLANNING)
+
 ## Features
+
+### Existing Features
+
+#### Home Page
+
+  * The landing page of the quiz consists of two things: a short heading that informs the user what both the page and the quiz is about, and a clickable "PLAY" button that will start the quiz. The background image is colorful and shows characters from the tv show, and I therefore wanted to keep the container for the heading and button simple to make it clear to the user.
+ 
+ * Add short description?
+      
+(SCREENSHOT OF HOME PAGE)
+
+#### Quiz Page
+
+* **Score Counter**
+
+   *  At the top of the question container, the user can keep track of the scores. As presented on the home page, a correct answer will give the user 10 points and the score counter will update accordingly. 
+
+(SCREENSHOT OF SCORE COUNTER)
+
+* **Question and Alternatives**
+
+   * Below the score counter, the user will find the question with four clickable answer alternatives. If the user gets answers correctly, the alternative will turn green. If the user answer is incorrect, the alternative will turn red. After an answer alternative is clicked, the next question will show up automatically. There is a total of 10 questions and the order in which they appear is random.
+
+(SCREENSHOT OF QUESTIONS)
+(SCREENSHOT OF CORRET ANSWER)
+(SCREENSHOW OF INCORRECT ANSWER)
 
 ### Features to Implement
 
 ## Testing
 
 ### Bugs
+
+click text, fixed by pointer. 
 
 ### Validator Testing
 
