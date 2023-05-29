@@ -46,7 +46,15 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 ### Features to Implement
 
+Below, I present the features that with time could be implemented to improve the quiz further. 
 
+* **Question counter** - A function could be added to display which question the user is currently on (like 5 out of 10).
+
+* **Different levels** - At the home page, the user could be given the option to pick their preferred level (such as beginner, intermediate, advanced). For this, more questions would have to be added as well. 
+
+* **Countdown** - To make the quiz more challenging, a countdown could be added. This could either be done by adding a countdown for each question, or for the entire quiz (such as 10 seconds per question or giving the user a time to complete all ten questions. Perhaps this could be linked to the suggested different levels).
+
+* **Improved result section** - To add a humorous element to the quiz, the user could be given a title (inspired by the characters in the tv show) based on their final score presented at the end page. 
 
 ## Testing
 
@@ -85,10 +93,10 @@ I deployed the application to GitHub pages using the following process:
 
 ### Content
 
-*I will use [this YouTube Video](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=12s) by YouTube channel Brian Design to create the JavaScript for this project.
+* [This YouTube Video](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=12s) by YouTube channel "Brian Design" has been a massive help in creating the JavaScript code for this project. I have watched the video several times and used it as a starting point for how to create a quiz using JavaScript, and modified it to fit my project. 
 
 ### Media
 
-* The background image for all three pages (home, game, and end) is taken from [Rotten Tomatoe](https://www.rottentomatoes.com/tv/the_office).
+* The background image displayed on all three pages (home page, game page, and end page) is taken from [Rotten Tomatoe](https://www.rottentomatoes.com/tv/the_office).
 
-## Other
+
