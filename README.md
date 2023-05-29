@@ -1,10 +1,12 @@
 # The Office Quiz (American Version)
 
-This 10 questions quiz is for anyone who has watched the sticom The Office (American version) and wants to test their knowledge. 
+This is a quiz based on the American sitcom The Office. It is therefore targeted towards people who have watched the tv show, especially those who are fans, as it allows them to test their knowledge. The site is easy to use and the user gets their score presented to them both during and after the quiz, making it a great opportunity for the competitive to challenge their friends to see who can get the highest result. 
 
 (SCREENSHOT OF AMIRESPONSIVE)
 
 ## Planning
+
+At the planning stage of this project, I used pen and paper to sketch ideas. As a JavaScript beginner, I knew I wanted to create a rather simple quiz application before thinking about and perhaps eventually adding more complex features (see Features to Implement further down). The sketch presented below is the wireframe I ended up using. 
 
 ![Image of wireframe](/documentation/wireframe-image.png)
 
@@ -31,7 +33,7 @@ This 10 questions quiz is for anyone who has watched the sticom The Office (Amer
 
 * **Question and Alternatives**
 
-  * Below the score counter, the user will find the question with four clickable answer alternatives. If the user gets answers correctly, the alternative will turn green. If the user answer is incorrect, the alternative will turn red. After an answer alternative is clicked, the next question will show up automatically. There is a total of 10 questions and the order in which they appear is random.
+  * Below the score counter, the user will find the question with four clickable answer alternatives. If the user answers correctly, the alternative will turn green. If the user answer is incorrect, the alternative will turn red. After an answer alternative is clicked, the next question will show up automatically. There is a total of ten questions and the order in which they appear is random.
 
 ![Screenshot of correct answer](/documentation/correct-answer-screenshot.png)
 ![Screenshot of incorrect answer](/documentation/incorrect-answer-screenshot.png)
@@ -40,9 +42,11 @@ This 10 questions quiz is for anyone who has watched the sticom The Office (Amer
 
 ![Screenshot of end page](/documentation/end-page-screenshot.png)
 
-* After the user has answered all ten questions, the end page will show up automatically. The end page will present the final score and gives the user the alternative to click two different buttons, either play again or go back to the home page. 
+* After the user has answered all ten questions, the end page will show up automatically. The end page will present the final score and gives the user the alternative to click two different buttons, either "Play Again" to restart the game or "Go Home" to go back to the home page. 
 
 ### Features to Implement
+
+
 
 ## Testing
 
