@@ -5,7 +5,7 @@ This is a quiz based on the American sitcom The Office. It is therefore targeted
 **Link to the live quiz: <https://gustafsson96.github.io/american-the-office-quiz/>**
 
 ![Screenshot of AmIResponsive](/documentation/amiresponsive-screenshot.png)
-Screenshot from [Am I Responsive](https://ui.dev/amiresponsive)
+*Screenshot from [Am I Responsive](https://ui.dev/amiresponsive)*
 
 ## Planning
 
@@ -49,7 +49,7 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 ### Features to Implement
 
-Below, I present the features that with time could be implemented to improve the quiz further. 
+Below, I present the features that with more time and knowledge could be implemented to improve the quiz further.
 
 * **Question counter** - A function could be added to display which question the user is currently on (like 5 out of 10).
 
@@ -61,9 +61,12 @@ Below, I present the features that with time could be implemented to improve the
 
 ## Testing
 
-### Bugs
+* Browsers
+   * I opened and played the quiz in Google Chrome. No errors to report. 
+   * I opened and played the quiz in Safari. No errors to report. 
+   * I opened and played the quiz in Firefox. No errors to report. 
 
-click text, fixed by pointer.
+* I have sent the link to the quiz to a few friends for them to open on their devices. I asked if they could play a round and get back to me with feedback with focus on the quiz functionality and if they found it easy to use. They had no errors to report and all found it easy to use. 
 
 * To establish the accessibility of the quiz I ran a devtool lighthouse report that generated the following result:
 
@@ -83,6 +86,8 @@ click text, fixed by pointer.
 
 ### Unfixed Bugs
 
+* Regarding the question alternatives, not the entire box container can be clicked to generate an answer. I did not manage to solve this in time without breaking the code, but the added pointer shown when hovering over where the alternative is clickable still makes it clear to the user. 
+
 ## Deployment
 
 I deployed the application to GitHub pages using the following process:
@@ -98,7 +103,7 @@ I deployed the application to GitHub pages using the following process:
 
 ### Content
 
-* [This YouTube Video](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=12s) by YouTube channel "Brian Design" has been a massive help in creating the JavaScript code for this project. I have watched the video several times and used it as a starting point for how to create a quiz using JavaScript, and modified it to fit my project. 
+* [This YouTube Video](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=12s) by YouTube channel "Brian Design" has been very helpful when creating the JavaScript code for this project. I have watched the video several times and used it as a starting point for how to create a quiz using JavaScript, and modified it to fit my project. 
 
 ### Media
 
