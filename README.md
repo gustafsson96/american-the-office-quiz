@@ -2,7 +2,10 @@
 
 This is a quiz based on the American sitcom The Office. It is therefore targeted towards people who have watched the tv show, especially those who are fans, as it allows them to test their knowledge. The site is easy to use and the user gets their score presented to them both during and after the quiz, making it a great opportunity for the competitive to challenge their friends to see who can get the highest result. 
 
-(SCREENSHOT OF AMIRESPONSIVE)
+**Link to the live quiz: <https://gustafsson96.github.io/american-the-office-quiz/>**
+
+![Screenshot of AmIResponsive](/documentation/amiresponsive-screenshot.png)
+Screenshot from [Am I Responsive](https://ui.dev/amiresponsive)
 
 ## Planning
 
@@ -87,7 +90,9 @@ I deployed the application to GitHub pages using the following process:
 1. Open up the GitHub repositry for the project.
 2. Click the Settings tab and navigate to Pages in the menu to the left of the screen.
 3. Under Branch, select "main" in the dropdown menu and click Save.
-4. Refresh page to find the link to the live website at the top of the GitHub Pages section.
+4. Refresh page to find the link to the live site at the top of the GitHub Pages section.
+
+**Link to the live quiz: <https://gustafsson96.github.io/american-the-office-quiz/>**
 
 ## Credits
 

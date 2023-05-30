@@ -1,3 +1,6 @@
+/* REFERENCE: I have used this linked YouTube tutorial: https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=12s 
+to create this JavaScript code and modified it for my project */
+
 const question = document.querySelector('#question');
 const alternatives = Array.from(document.querySelectorAll('.choice-text'));
 const displayScore = document.querySelector('#score');
