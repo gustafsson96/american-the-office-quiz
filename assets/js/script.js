@@ -1,6 +1,6 @@
 const question = document.querySelector('#question');
 const alternatives = Array.from(document.querySelectorAll('.choice-text'));
-const scoreText = document.querySelector('#score');
+const displayScore = document.querySelector('#score');
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -94,19 +94,31 @@ let questions = [
 const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 10;
 
-function startGame() {
+/**
+ * Starts game when script for quiz page is loaded 
+ * and gets and displays questions from variable 'questions'
+ */
+function runGame() {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
     newQuestion();
 }
 
+/**
+ * 
+ * and saves data to local storage and takes user to end page
+ * when there are no more questions to display
+ * 
+ */
 function newQuestion() {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
         return window.location.assign('end.html');
     }
+
+    // For questions to show up in a random order
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
@@ -122,6 +134,9 @@ function newQuestion() {
     acceptingAnswers = true;
 }
 
+/* Add event listener for the alternatives and target the CSS rule 
+for correct = green and incorrect = red when clicking alternatives */
+
 alternatives.forEach(alternative => {
     alternative.addEventListener('click', e => {
         if (!acceptingAnswers) return;
@@ -132,11 +147,16 @@ alternatives.forEach(alternative => {
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
+        // To increment score counter when answer is correct
+
         if (classToApply === 'correct') {
-            incrementScore(SCORE_POINTS);
+            increaseScore(SCORE_POINTS);
         }
 
         selectedAlternative.parentElement.classList.add(classToApply);
+
+        /* To show next question after the result of the clicked
+         alternative has been determined and displayed */
 
         setTimeout(() => {
             selectedAlternative.parentElement.classList.remove(classToApply);
@@ -145,9 +165,11 @@ alternatives.forEach(alternative => {
     });
 });
 
-incrementScore = num => {
+// To get and display score counter
+
+increaseScore = num => {
     score += num;
-    scoreText.innerText = score;
+    displayScore.innerText = score;
 };
 
-startGame();
+runGame();

@@ -97,6 +97,6 @@ I deployed the application to GitHub pages using the following process:
 
 ### Media
 
-* The background image displayed on all three pages (home page, game page, and end page) is taken from [Rotten Tomatoe](https://www.rottentomatoes.com/tv/the_office).
+* The background image displayed on all three pages (home page, game page, and end page) is taken from [Rotten Tomatoes](https://www.rottentomatoes.com/tv/the_office).
 
 
