@@ -4,7 +4,7 @@ This is a quiz based on the American sitcom The Office. It is therefore targeted
 
 **Link to the live quiz: <https://gustafsson96.github.io/american-the-office-quiz/>**
 
-![Screenshot of AmIResponsive]()
+![Screenshot of AmIResponsive](/documentation/amiresponsive-screenshot.png)
 *Screenshot from [Am I Responsive](https://ui.dev/amiresponsive)*
 
 ## Planning
@@ -21,7 +21,7 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 ![Screenshot of home page](/documentation/home-page-screenshot.png)
 
-* The home page consists of a heading, a short but clear description of the quiz, and a clickable "PLAY" button that will start the game. The background image is colorful and shows characters from the tv show, and the container holding the content has therefore been kept simple to make it easy to read.
+* The home page consists of a heading, a short but clear description of the quiz, and a clickable "START QUIZ" button that will start the game. The background image is colorful and shows characters from the tv show, and the container holding the content has therefore been kept simple to make it easy to read.
 
 #### Quiz Page
 
@@ -29,7 +29,7 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 * **Score Counter**
 
-  * At the top of the question container, the user can keep track of the score. As presented on the home page, a correct answer will give the user 10 points and the score counter will update accordingly (the score counter does not change size even though the presented screenshots make it looks like it does). 
+  * At the top of the question container, the user can keep track of their score. As presented on the home page, a correct answer will give the user 10 points and the score counter will update accordingly (the score counter does not change size even though the presented screenshots make it looks like it does). 
 
 ![Screenshot of score counter](/documentation/score-counter-screenshot.png)
 ![Screenshot of updated score counter](/documentation/score-counter-updated-screenshot.png)
@@ -43,7 +43,7 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 #### End Page
 
-![Screenshot of end page]()
+![Screenshot of end page](/documentation/end-page-screenshot.png)
 
 * After the user has answered all ten questions, the end page will show up automatically. The end page will present the final score together with a sentence depending on what that score is (0-30 = "Hm.. not really a fan of The Office?", 40-70 = "You're pretty good at this!", and 80-100 = "Wow! Michael Scott would be proud!")
 * On the end page, the user is also given the alternative to click either "Play Again" to restart the game or "Go Home" to go back to the home page. 
@@ -56,7 +56,7 @@ Below, I present the features that with more time and knowledge could be impleme
 
 * **Different levels** - At the home page, the user could be given the option to pick their preferred level (such as beginner, intermediate, advanced). For this, more questions would have to be added as well. 
 
-* **Countdown** - To make the quiz more challenging, a countdown could be added. This could either be done by adding a countdown for each question, or for the entire quiz (such as 10 seconds per question or giving the user a time to complete all ten questions. Perhaps this could be linked to the suggested different levels).
+* **Countdown** - To make the quiz more challenging, a countdown could be added. This could either be done by adding a countdown for each question, or for the entire quiz (such as 10 seconds per question or giving the user a specific time to complete all ten questions. Perhaps this could be linked to the suggested different levels).
 
 ## Testing
 
@@ -85,7 +85,7 @@ Below, I present the features that with more time and knowledge could be impleme
 
 ### Unfixed Bugs
 
-* Regarding the question alternatives, not the entire box container can be clicked to generate an answer. I did not manage to solve this in time without breaking the code, but the added pointer shown when hovering over where the alternative is clickable still makes it clear to the user. 
+* Regarding the question alternatives, not the entire box container can be clicked to generate an answer. I did not manage to solve this in time without breaking the code, but the added pointer shown when hovering over where the alternative is clickable adds an element of clarity. 
 
 ## Deployment
 
