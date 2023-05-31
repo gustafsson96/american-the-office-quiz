@@ -43,7 +43,7 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 #### End Page
 
-![Screenshot of end page](/documentation/end-page-screenshot.png)
+![Screenshot of end page](/documentation/endpage-screenshot.png)
 
 * After the user has answered all ten questions, the end page will show up automatically. The end page will present the final score together with a sentence depending on what that score is (0-30 = "Hm.. not really a fan of The Office?", 40-70 = "You're pretty good at this!", and 80-100 = "Wow! Michael Scott would be proud!")
 * On the end page, the user is also given the alternative to click either "Play Again" to restart the game or "Go Home" to go back to the home page. 
