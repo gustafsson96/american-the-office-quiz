@@ -4,7 +4,7 @@ This is a quiz based on the American sitcom The Office. It is therefore targeted
 
 **Link to the live quiz: <https://gustafsson96.github.io/american-the-office-quiz/>**
 
-![Screenshot of AmIResponsive](/documentation/amiresponsive-screenshot.png)
+![Screenshot of AmIResponsive]()
 *Screenshot from [Am I Responsive](https://ui.dev/amiresponsive)*
 
 ## Planning
@@ -43,9 +43,10 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 #### End Page
 
-![Screenshot of end page](/documentation/end-page-screenshot.png)
+![Screenshot of end page]()
 
-* After the user has answered all ten questions, the end page will show up automatically. The end page will present the final score and gives the user the alternative to click two different buttons, either "Play Again" to restart the game or "Go Home" to go back to the home page. 
+* After the user has answered all ten questions, the end page will show up automatically. The end page will present the final score together with a sentence depending on what that score is (0-30 = "Hm.. not really a fan of The Office?", 40-70 = "You're pretty good at this!", and 80-100 = "Wow! Michael Scott would be proud!")
+* On the end page, the user is also given the alternative to click either "Play Again" to restart the game or "Go Home" to go back to the home page. 
 
 ### Features to Implement
 
@@ -56,8 +57,6 @@ Below, I present the features that with more time and knowledge could be impleme
 * **Different levels** - At the home page, the user could be given the option to pick their preferred level (such as beginner, intermediate, advanced). For this, more questions would have to be added as well. 
 
 * **Countdown** - To make the quiz more challenging, a countdown could be added. This could either be done by adding a countdown for each question, or for the entire quiz (such as 10 seconds per question or giving the user a time to complete all ten questions. Perhaps this could be linked to the suggested different levels).
-
-* **Improved result section** - To add a humorous element to the quiz, the user could be given a title (inspired by the characters in the tv show) based on their final score presented at the end page. 
 
 ## Testing
 
