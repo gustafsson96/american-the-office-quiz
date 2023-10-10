@@ -5,12 +5,6 @@ const question = document.querySelector('#question');
 const alternatives = Array.from(document.querySelectorAll('.choice-text'));
 const displayScore = document.querySelector('#score');
 
-let currentQuestion = {};
-let acceptingAnswers = true;
-let score = 0;
-let questionCounter = 0;
-let availableQuestions = [];
-
 let questions = [
     {
         question: 'What is Dwight Schrute\'s middle name?',
@@ -94,13 +88,49 @@ let questions = [
     }
 ];
 
+let currentQuestion = {};
+score = 0;
+
+
+const POINTS = 10;
+const QUESTIONS = 10;
+
+
+function startGame() {
+
+}
+
+function getQuestion() {
+
+}
+
+function shuffleQuestions() {
+
+}
+
+function checkAnswer() {
+
+}
+
+function incrementScore() {
+
+}
+
+
+/**
+ 
+ let currentQuestion = {};
+let acceptingAnswers = true;
+let score = 0;
+let questionCounter = 0;
+let availableQuestions = [];
+
 const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 10;
 
-/**
- * Starts game when script for quiz page is loaded 
- * and gets and displays questions from variable 'questions'
- */
+  Starts game when script for quiz page is loaded 
+  and gets and displays questions from variable 'questions'
+
 function runGame() {
     questionCounter = 0;
     score = 0;
@@ -108,12 +138,12 @@ function runGame() {
     newQuestion();
 }
 
-/**
+
  * 
  * and saves data to local storage and takes user to end page
  * when there are no more questions to display
  * 
- */
+
 function newQuestion() {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
@@ -137,8 +167,8 @@ function newQuestion() {
     acceptingAnswers = true;
 }
 
-/* Add event listener for the alternatives and target the CSS rule 
-for correct = green and incorrect = red when clicking alternatives */
+Add event listener for the alternatives and target the CSS rule 
+for correct = green and incorrect = red when clicking alternatives 
 
 alternatives.forEach(alternative => {
     alternative.addEventListener('click', e => {
@@ -158,8 +188,8 @@ alternatives.forEach(alternative => {
 
         selectedAlternative.parentElement.classList.add(classToApply);
 
-        /* To show next question after the result of the clicked
-         alternative has been determined and displayed */
+        To show next question after the result of the clicked
+         alternative has been determined and displayed 
 
         setTimeout(() => {
             selectedAlternative.parentElement.classList.remove(classToApply);
@@ -168,7 +198,7 @@ alternatives.forEach(alternative => {
     });
 });
 
-// To get and display score counter
+To get and display score counter
 
 increaseScore = num => {
     score += num;
@@ -176,3 +206,5 @@ increaseScore = num => {
 };
 
 runGame();
+
+ */
