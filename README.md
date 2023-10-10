@@ -87,6 +87,8 @@ Below, I present the features that with more time and knowledge could be impleme
 
 ![Screenshot of jigsaw validator result](/documentation/css-validator-text-screenshot.png)
 
+* JSHint
+
 ### Unfixed Bugs
 
 * Regarding the question alternatives, not the entire box container can be clicked to generate an answer. I did not manage to solve this in time without breaking the code, but the added pointer shown when hovering over where the alternative is clickable adds an element of clarity. 
@@ -101,6 +103,10 @@ I deployed the application to GitHub pages using the following process:
 4. Refresh page to find the link to the live site at the top of the GitHub Pages section.
 
 **Link to the live quiz: <https://gustafsson96.github.io/american-the-office-quiz/>**
+
+### Forking
+
+### Cloning
 
 ## Credits
 
