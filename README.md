@@ -13,6 +13,10 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 ![Image of wireframe](/documentation/wireframe-image.png)
 
+### Color Scheme
+
+### Font
+
 ## Features
 
 ### Existing Features
