@@ -89,20 +89,41 @@ let questions = [
 ];
 
 let currentQuestion = {};
-score = 0;
+let score = 0;
+let availableQuestions = [];
 
 
 const POINTS = 10;
-const QUESTIONS = 10;
+const QUESTIONS_MAX = 10;
 
 
 function startGame() {
+    questionsArray = Array.from(questions);
 
+    getQuestion()
 }
 
 function getQuestion() {
+    if (availableQuestions.length === 0) {
+        noAvailableQuestions();
+    }
+
+    if (questionCounter > QUESTIONS_MAX) {
+        maxQuestionsReached();
+    }
+}
+
+function noAvailableQuestions() {
+    localStorage.setItem('mostRecentScore', score);
+    window.location.assign('end.html');
+}
+
+function maxQuestionsReached() {
 
 }
+
+const randomIndex = Math.floor(Math.random() * availableQuestions.length);
+const selectedQuestion = availableQuestions.splice(randomIndex, 1)[0];
 
 function shuffleQuestions() {
 
@@ -115,6 +136,8 @@ function checkAnswer() {
 function incrementScore() {
 
 }
+
+startGame()
 
 
 /**
