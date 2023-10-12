@@ -1,8 +1,61 @@
-const question = document.querySelector('#question');
-const alternatives = Array.from(document.querySelectorAll('.choice-text'));
+
 const displayScore = document.querySelector('#score');
 
 let questions = [
+    {
+        question: 'What is Dwight Schrute\'s middle name?',
+        options: ['Chris', 'Kurt', 'Cameron', 'David'],
+        answer: 'Kurt'
+    },
+    {
+        question: 'What is the name of Andy\'s acappella group?',
+        options: ['The Three Amigos', 'Sing the Bells', 'Here Comes Treble', 'Voice of Angels'],
+        answer: 'Here Comes Treble'
+    },
+    {
+        question: 'Bob Vance is the owner of...?',
+        options: ['Vance Refrigeration', 'Vance Automotives', 'Vanc e Barbershop', 'Vance Insurance'],
+        answer: 'Vance Refrigeration'
+    },
+    {
+        question: 'Which Dunder Mifflin branch closing is announced at the company picnic?',
+        options: ['Utica', 'Scranton', 'Nashua', 'Buffalo'],
+        answer: 'Buffalo'
+    },
+    {
+        question: 'Kevin claims he is famous for what dish?',
+        options: ['Tacos', 'Pork Ribs', 'Chicken Alfredo', 'Chili'],
+        answer: 'Chili'
+    },
+    {
+        question: 'The office performs CPR to what song?',
+        options: ['"Staying Alive"', '"Poker Face"', '"Blurred Lines"', '"Waterloo"'],
+        answer: '"Staying Alive"'
+    },
+    {
+        question: 'What does Michael buy Ryan for Secret Santa?',
+        options: ['A car', 'A book', 'An iPod', 'A laptop'],
+        answer: 'An iPod'
+    },
+    {
+        question: 'Who wins the refrigerator in "Casino Night"?',
+        options: ['Creed', 'Meredith', 'Dwight', 'Michael'],
+        answer: 'Creed'
+    },
+    {
+        question: 'Finish the quote: "Bears, Beets, ...."?',
+        options: ['Star Trek', 'Dungeons and Dragons', 'Bareastein Bears', 'Battlestar Gallactica'],
+        answer: 'Battlestar Gallactica'
+    },
+    {
+        question: 'Dwight Schrute is the ...?',
+        options: ['Assistant Regional Manager', 'Assistant to the Regional Manager', 'Regional Assistant Manager', 'Manager of Regional Assistants'],
+        answer: 'Assistant to the Regional Manager'
+    }
+];
+
+
+/* let questions = [
     {
         question: 'What is Dwight Schrute\'s middle name?',
         alternative1: 'Chris',
@@ -84,3 +137,60 @@ let questions = [
         answer: 2,
     }
 ];
+
+*/
+
+const POINTS = 10;
+const MAX_QUESTIONS = 10;
+
+let questionsAvailable = [...questions];
+let score = 0;
+let questionCounter = 0;
+let acceptingAnswers = true;
+
+function startQuiz() {
+    questionsAvailable = [...questions];
+    questionCounter = 0;
+    score = 0;
+
+    getQuestion();
+}
+
+
+function getQuestion() {
+    if (questionCounter >= MAX_QUESTIONS) {
+        endOfQuiz();
+        return;
+    }
+
+    const currentQuestion = questionsAvailable[questionCounter];
+
+    const question = document.getElementById('question');
+    question.textContent = currentQuestion.question;
+
+    const alternatives = document.querySelectorAll('.choice-container');
+    alternatives.forEach((alternative, index) => {
+        alternative.textContent = currentQuestion.options[index];
+        alternative.dataset.number = index;
+    });
+
+    questionCounter++;
+}
+
+/* function maxQuestionsReached() {
+
+}
+
+function checkAnswer() {
+
+}
+
+function incrementScore() {
+
+}
+
+function endOfQuiz() {
+
+} */
+
+startQuiz();
