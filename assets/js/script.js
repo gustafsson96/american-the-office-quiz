@@ -1,7 +1,7 @@
 
 const displayScore = document.querySelector('#score');
 
-let questions = [
+const questions = [
     {
         question: 'What is Dwight Schrute\'s middle name?',
         options: ['Chris', 'Kurt', 'Cameron', 'David'],
@@ -152,10 +152,8 @@ function startQuiz() {
     questionsAvailable = [...questions];
     questionCounter = 0;
     score = 0;
-
     getQuestion();
 }
-
 
 function getQuestion() {
     if (questionCounter >= MAX_QUESTIONS) {
@@ -175,6 +173,11 @@ function getQuestion() {
     });
 
     questionCounter++;
+}
+
+function getRandomQuestion(questionArray) {
+    const randomQuestion = Math.floor(Math.random() * questionArray.length);
+    return questionArray[randomQuestion];
 }
 
 /* function maxQuestionsReached() {
