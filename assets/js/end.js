@@ -1,4 +1,4 @@
-// Displays text depending on score
+/*
 
 if (mostRecentScore <= 30) {
     displayScoreText.innerText = "Hm.. not really a fan of The Office?";
@@ -7,3 +7,7 @@ if (mostRecentScore <= 30) {
 } else {
     displayScoreText.innerText = "Wow! Michael Scott would be proud!";
 };
+
+*/
+
+
