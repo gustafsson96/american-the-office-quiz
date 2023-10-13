@@ -93,14 +93,20 @@ function getQuestion() {
             if (currentQuestion.answer == index) {
                 console.log('Correct!:D');
                 alternative.classList.add('correct');
+                setTimeout(() => {
+                    alternative.classList.remove('correct');
+                }, 2000);
                 incrementScore();
             } else {
                 console.log('Incorrect:(');
                 alternative.classList.add('incorrect');
+                setTimeout(() => {
+                    alternative.classList.remove('incorrect');
+                }, 2000);
+                decreaseScore();
             }
         });
     });
-
 }
 
 function incrementScore() {
@@ -108,9 +114,9 @@ function incrementScore() {
     displayScore.innerHTML = score + 10;
 }
 
-function resetClasses(alternative) {
-    alternative.classList.remove('incorrect');
-    alternative.classList.remove('correct');
+function decreaseScore() {
+    const displayScore = document.querySelector('#score');
+    displayScore.innerHTML = score - 10;
 }
 
 function nextQuestion() {
@@ -121,8 +127,6 @@ function nextQuestion() {
 
     getQuestion(questions[questionCounter]);
     questionCounter++;
-
-    setTimeout(nextQuestion, 3000);
 }
 
 /* 
