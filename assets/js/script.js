@@ -1,6 +1,3 @@
-
-const displayScore = document.querySelector('#score');
-
 const questions = [
     {
         question: 'What is Dwight Schrute\'s middle name?',
@@ -140,6 +137,9 @@ const questions = [
 
 */
 
+const displayScore = document.querySelector('#score');
+
+
 const POINTS = 10;
 const MAX_QUESTIONS = 10;
 
@@ -155,6 +155,7 @@ function startQuiz() {
     getQuestion();
 }
 
+/* shuffles the question array */
 function shuffleQuestions(questionarray) {
     for (let i = questionarray.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -177,19 +178,30 @@ function getQuestion() {
     question.textContent = currentQuestion.question;
 
     const alternatives = document.querySelectorAll('.choice-container');
+
     alternatives.forEach((alternative, index) => {
         alternative.textContent = currentQuestion.options[index];
         alternative.dataset.number = index;
+
+        alternative.addEventListener('click', (e) => {
+            const selectedAlternative = e.target;
+            checkAnswer(selectedAlternative);
+        });
     });
 
     questionCounter++;
 }
 
-/* function maxQuestionsReached() {
+function checkAnswer(selectedAlternative) {
 
+    if (selectedAlternative == correctAnswer) {
+        console.log('Correct!');
+    } else {
+        console.log('Incorrect.');
+    }
 }
 
-function checkAnswer() {
+/* function maxQuestionsReached() {
 
 }
 
