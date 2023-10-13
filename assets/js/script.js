@@ -155,13 +155,23 @@ function startQuiz() {
     getQuestion();
 }
 
+function shuffleQuestions(questionarray) {
+    for (let i = questionarray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [questionarray[i], questionarray[j]] = [questionarray[j], questionarray[i]];
+    }
+    return questionarray;
+}
+
+const shuffledQuestions = shuffleQuestions(questions);
+
 function getQuestion() {
     if (questionCounter >= MAX_QUESTIONS) {
         endOfQuiz();
         return;
     }
 
-    const currentQuestion = questionsAvailable[questionCounter];
+    const currentQuestion = shuffledQuestions[questionCounter];
 
     const question = document.getElementById('question');
     question.textContent = currentQuestion.question;
@@ -173,11 +183,6 @@ function getQuestion() {
     });
 
     questionCounter++;
-}
-
-function getRandomQuestion(questionArray) {
-    const randomQuestion = Math.floor(Math.random() * questionArray.length);
-    return questionArray[randomQuestion];
 }
 
 /* function maxQuestionsReached() {
