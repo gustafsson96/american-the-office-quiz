@@ -137,8 +137,6 @@ const questions = [
 
 */
 
-const displayScore = document.querySelector('#score');
-
 
 const POINTS = 10;
 const MAX_QUESTIONS = 10;
@@ -187,6 +185,7 @@ function getQuestion() {
             if (currentQuestion.answer == index) {
                 console.log('Correct!:D');
                 alternative.classList.add('correct');
+                incrementScore();
             } else {
                 console.log('Incorrect:(');
                 alternative.classList.add('incorrect');
@@ -197,6 +196,11 @@ function getQuestion() {
     questionCounter++;
 }
 
+function incrementScore() {
+    const displayScore = document.querySelector('#score');
+    displayScore.innerHTML = score + 10;
+}
+
 function newQuestion() {
 
 }
@@ -205,9 +209,7 @@ function newQuestion() {
 
 }
 
-function incrementScore() {
 
-}
 
 function endOfQuiz() {
 
