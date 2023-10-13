@@ -11,7 +11,7 @@ const questions = [
     },
     {
         question: 'Bob Vance is the owner of...?',
-        options: ['Vance Refrigeration', 'Vance Automotives', 'Vanc e Barbershop', 'Vance Insurance'],
+        options: ['Vance Refrigeration', 'Vance Automotives', 'Vance Barbershop', 'Vance Insurance'],
         answer: 0
     },
     {
@@ -62,7 +62,7 @@ function startQuiz() {
     questionsAvailable = [...questions];
     questionCounter = 0;
     score = 0;
-    getQuestion();
+    nextQuestion();
 }
 
 /* shuffles the question array */
@@ -77,17 +77,13 @@ function shuffleQuestions(questionarray) {
 const shuffledQuestions = shuffleQuestions(questions);
 
 function getQuestion() {
-    if (questionCounter >= MAX_QUESTIONS) {
-        endOfQuiz();
-        return;
-    }
 
-    const currentQuestion = shuffledQuestions[questionCounter];
+    let currentQuestion = shuffledQuestions[questionCounter];
 
-    const question = document.getElementById('question');
+    let question = document.getElementById('question');
     question.textContent = currentQuestion.question;
 
-    const alternatives = document.querySelectorAll('.choice-container');
+    let alternatives = document.querySelectorAll('.choice-container');
 
     alternatives.forEach((alternative, index) => {
         alternative.textContent = currentQuestion.options[index];
@@ -105,7 +101,6 @@ function getQuestion() {
         });
     });
 
-    questionCounter++;
 }
 
 function incrementScore() {
@@ -113,18 +108,33 @@ function incrementScore() {
     displayScore.innerHTML = score + 10;
 }
 
-function newQuestion() {
-
+function resetClasses(alternative) {
+    alternative.classList.remove('incorrect');
+    alternative.classList.remove('correct');
 }
 
-/* function maxQuestionsReached() {
+function nextQuestion() {
+    if (questionCounter >= MAX_QUESTIONS) {
+        console.log('end of game');
+        return;
+    }
 
+    getQuestion(questions[questionCounter]);
+    questionCounter++;
+
+    setTimeout(nextQuestion, 3000);
 }
 
-
-
+/* 
 function endOfQuiz() {
-
-} */
+    console.log("No more questions!")
+    location.replace("end.html");
+}
+ 
+function maxQuestionsReached() {
+ 
+}
+ 
+*/
 
 startQuiz();
