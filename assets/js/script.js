@@ -2,52 +2,52 @@ const questions = [
     {
         question: 'What is Dwight Schrute\'s middle name?',
         options: ['Chris', 'Kurt', 'Cameron', 'David'],
-        answer: 'Kurt'
+        answer: 1
     },
     {
         question: 'What is the name of Andy\'s acappella group?',
         options: ['The Three Amigos', 'Sing the Bells', 'Here Comes Treble', 'Voice of Angels'],
-        answer: 'Here Comes Treble'
+        answer: 2
     },
     {
         question: 'Bob Vance is the owner of...?',
         options: ['Vance Refrigeration', 'Vance Automotives', 'Vanc e Barbershop', 'Vance Insurance'],
-        answer: 'Vance Refrigeration'
+        answer: 0
     },
     {
         question: 'Which Dunder Mifflin branch closing is announced at the company picnic?',
         options: ['Utica', 'Scranton', 'Nashua', 'Buffalo'],
-        answer: 'Buffalo'
+        answer: 3
     },
     {
         question: 'Kevin claims he is famous for what dish?',
         options: ['Tacos', 'Pork Ribs', 'Chicken Alfredo', 'Chili'],
-        answer: 'Chili'
+        answer: 3
     },
     {
         question: 'The office performs CPR to what song?',
         options: ['"Staying Alive"', '"Poker Face"', '"Blurred Lines"', '"Waterloo"'],
-        answer: '"Staying Alive"'
+        answer: 0
     },
     {
         question: 'What does Michael buy Ryan for Secret Santa?',
         options: ['A car', 'A book', 'An iPod', 'A laptop'],
-        answer: 'An iPod'
+        answer: 2
     },
     {
         question: 'Who wins the refrigerator in "Casino Night"?',
         options: ['Creed', 'Meredith', 'Dwight', 'Michael'],
-        answer: 'Creed'
+        answer: 0
     },
     {
         question: 'Finish the quote: "Bears, Beets, ...."?',
         options: ['Star Trek', 'Dungeons and Dragons', 'Bareastein Bears', 'Battlestar Gallactica'],
-        answer: 'Battlestar Gallactica'
+        answer: 3
     },
     {
         question: 'Dwight Schrute is the ...?',
         options: ['Assistant Regional Manager', 'Assistant to the Regional Manager', 'Regional Assistant Manager', 'Manager of Regional Assistants'],
-        answer: 'Assistant to the Regional Manager'
+        answer: 1
     }
 ];
 
@@ -183,22 +183,16 @@ function getQuestion() {
         alternative.textContent = currentQuestion.options[index];
         alternative.dataset.number = index;
 
-        alternative.addEventListener('click', (e) => {
-            const selectedAlternative = e.target;
-            checkAnswer(selectedAlternative);
+        alternative.addEventListener('click', function () {
+            if (currentQuestion.answer == index) {
+                console.log('Correct!:D');
+            } else {
+                console.log('Incorrect:(');
+            }
         });
     });
 
     questionCounter++;
-}
-
-function checkAnswer(selectedAlternative) {
-
-    if (selectedAlternative == correctAnswer) {
-        console.log('Correct!');
-    } else {
-        console.log('Incorrect.');
-    }
 }
 
 /* function maxQuestionsReached() {
