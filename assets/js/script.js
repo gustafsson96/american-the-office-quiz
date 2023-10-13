@@ -186,13 +186,19 @@ function getQuestion() {
         alternative.addEventListener('click', function () {
             if (currentQuestion.answer == index) {
                 console.log('Correct!:D');
+                alternative.classList.add('correct');
             } else {
                 console.log('Incorrect:(');
+                alternative.classList.add('incorrect');
             }
         });
     });
 
     questionCounter++;
+}
+
+function newQuestion() {
+
 }
 
 /* function maxQuestionsReached() {
