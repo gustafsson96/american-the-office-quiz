@@ -77,13 +77,13 @@ h1 {
 }
 
 #score-message {
+    color: orange;
     font-size: 2rem;
     font-weight: bold;
-    margin: 1rem 0;
+    margin-bottom: 2rem;
 }
 
 .finalscore-prefix {
-    color: orange;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -119,6 +119,10 @@ h1 {
     }
 
     .finalscore-text {
+        font-size: 1.5rem;
+    }
+
+    #score-message {
         font-size: 1.5rem;
     }
 }
