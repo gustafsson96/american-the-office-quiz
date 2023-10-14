@@ -52,6 +52,7 @@ const questions = [
 ];
 
 const MAX_QUESTIONS = 10;
+const POINTS = 10;
 
 let questionsAvailable = [...questions];
 let score = 0;
@@ -62,7 +63,7 @@ function startQuiz() {
     questionsAvailable = [...questions];
     questionCounter = 0;
     score = 0;
-    nextQuestion();
+    getQuestion();
 }
 
 /* shuffles the question array */
@@ -74,47 +75,55 @@ function shuffleQuestions(questionarray) {
     return questionarray;
 }
 
-const shuffledQuestions = shuffleQuestions(questions);
+let shuffledQuestions = shuffleQuestions(questions);
+let currentQuestion = shuffledQuestions[questionCounter];
+let question = document.getElementById('question');
+let alternatives = document.querySelectorAll('.choice-container');
 
 function getQuestion() {
-    let currentQuestion = shuffledQuestions[questionCounter];
+    if (questionCounter >= MAX_QUESTIONS) {
+        console.log('end of game');
+        return window.location.assign("/");
+    } else {
+        questionCounter++;
+        question.textContent = currentQuestion.question;
 
-    let question = document.getElementById('question');
-    question.textContent = currentQuestion.question;
-
-    let alternatives = document.querySelectorAll('.choice-container');
-
-    function handleAnswerClick(index) {
-        const alternative = alternatives[index];
-        const resultClass = ['correct', 'incorrect'];
-
-        if (currentQuestion.answer == index) {
-            console.log('Correct!:D');
-            alternative.classList.add('correct');
-            incrementScore();
-        } else {
-            console.log('Incorrect:(');
-            alternative.classList.add('incorrect');
-            decreaseScore();
-        }
-
-        setTimeout(() => {
-            alternative.classList.remove('correct', 'incorrect');
-            nextQuestion();
-        }, 1000);
-    }
-
-    alternatives.forEach((alternative, index) => {
-        alternative.textContent = currentQuestion.options[index];
-        alternative.dataset.number = index;
-
-        alternative.addEventListener('click', () => {
-            handleAnswerClick(index);
-            return;
+        alternatives.forEach((alternative, index) => {
+            alternative.textContent = currentQuestion.options[index];
+            alternative.dataset.number = index;
         });
-    });
+
+        acceptingAnswers = true;
+    }
 }
 
+alternatives.forEach((alternative, index) => {
+    alternative.addEventListener('click', () => {
+        if (!acceptingAnswers) return;
+        acceptingAnswers = false;
+        handleAnswerClick(index);
+        return;
+    });
+});
+
+function handleAnswerClick(index) {
+    const alternative = alternatives[index];
+
+    if (currentQuestion.answer == index) {
+        console.log('Correct!:D');
+        alternative.classList.add('correct');
+        incrementScore();
+    } else {
+        console.log('Incorrect:(');
+        alternative.classList.add('incorrect');
+        decreaseScore();
+    }
+
+    setTimeout(() => {
+        alternative.classList.remove('correct', 'incorrect');
+        getQuestion();
+    }, 1000);
+}
 
 function incrementScore() {
     const displayScore = document.querySelector('#score');
@@ -126,17 +135,6 @@ function decreaseScore() {
     displayScore.innerHTML = score - 10;
 }
 
-function nextQuestion() {
-
-    if (questionCounter >= MAX_QUESTIONS) {
-        console.log('end of game');
-        return;
-    } else {
-        getQuestion(questions[questionCounter]);
-        questionCounter++;
-        console.log(questionCounter);
-    }
-}
 
 /* 
 function endOfQuiz() {
