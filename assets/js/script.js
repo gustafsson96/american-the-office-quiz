@@ -82,10 +82,8 @@ let alternatives = document.querySelectorAll('.choice-container');
 
 function getQuestion() {
     if (questionCounter >= MAX_QUESTIONS) {
-        console.log('end of game');
-        return window.location.assign("/");
+        endOfQuiz();
     } else {
-        questionCounter++;
         currentQuestion = shuffledQuestions[questionCounter];
         question.textContent = currentQuestion.question;
 
@@ -95,6 +93,9 @@ function getQuestion() {
         });
 
         acceptingAnswers = true;
+
+        questionCounter++;
+        console.log(questionCounter);
     }
 }
 
@@ -116,7 +117,6 @@ function handleAnswerClick(index) {
     } else {
         console.log('Incorrect:(');
         alternative.classList.add('incorrect');
-        decreaseScore();
     }
 
     setTimeout(() => {
@@ -126,26 +126,14 @@ function handleAnswerClick(index) {
 }
 
 function incrementScore() {
+    score += 10;
     const displayScore = document.querySelector('#score');
-    displayScore.innerHTML = score + 10;
+    displayScore.innerHTML = score;
 }
 
-function decreaseScore() {
-    const displayScore = document.querySelector('#score');
-    displayScore.innerHTML = score - 10;
-}
-
-
-/* 
 function endOfQuiz() {
-    console.log("No more questions!")
-    location.replace("end.html");
+    console.log('end of quiz!');
+    return window.location.replace("/end.html");
 }
- 
-function maxQuestionsReached() {
- 
-}
- 
-*/
 
 startQuiz();
