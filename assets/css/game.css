@@ -10,18 +10,13 @@ h1 {
     padding: 1rem;
     margin: 1rem;
     color: black;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .choice-prefix {
     padding: 0.2rem 1rem;
     font-weight: bold;
-}
-
-.choice-text {
-    padding: 0.4rem 1rem;
-    width: 100%;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 .correct {
