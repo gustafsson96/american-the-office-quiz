@@ -86,6 +86,7 @@ function getQuestion() {
         return window.location.assign("/");
     } else {
         questionCounter++;
+        currentQuestion = shuffledQuestions[questionCounter];
         question.textContent = currentQuestion.question;
 
         alternatives.forEach((alternative, index) => {
@@ -102,7 +103,6 @@ alternatives.forEach((alternative, index) => {
         if (!acceptingAnswers) return;
         acceptingAnswers = false;
         handleAnswerClick(index);
-        return;
     });
 });
 
