@@ -52,7 +52,6 @@ const questions = [
 ];
 
 const MAX_QUESTIONS = 10;
-const POINTS = 10;
 
 let questionsAvailable = [...questions];
 let score = 0;
@@ -82,6 +81,7 @@ let alternatives = document.querySelectorAll('.choice-container');
 
 function getQuestion() {
     if (questionCounter >= MAX_QUESTIONS) {
+        localStorage.setItem('recentScore', score);
         endOfQuiz();
     } else {
         currentQuestion = shuffledQuestions[questionCounter];
