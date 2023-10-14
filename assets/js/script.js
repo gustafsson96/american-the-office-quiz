@@ -77,7 +77,6 @@ function shuffleQuestions(questionarray) {
 const shuffledQuestions = shuffleQuestions(questions);
 
 function getQuestion() {
-
     let currentQuestion = shuffledQuestions[questionCounter];
 
     let question = document.getElementById('question');
@@ -85,29 +84,37 @@ function getQuestion() {
 
     let alternatives = document.querySelectorAll('.choice-container');
 
+    function handleAnswerClick(index) {
+        const alternative = alternatives[index];
+        const resultClass = ['correct', 'incorrect'];
+
+        if (currentQuestion.answer == index) {
+            console.log('Correct!:D');
+            alternative.classList.add('correct');
+            incrementScore();
+        } else {
+            console.log('Incorrect:(');
+            alternative.classList.add('incorrect');
+            decreaseScore();
+        }
+
+        setTimeout(() => {
+            alternative.classList.remove('correct', 'incorrect');
+            nextQuestion();
+        }, 1000);
+    }
+
     alternatives.forEach((alternative, index) => {
         alternative.textContent = currentQuestion.options[index];
         alternative.dataset.number = index;
 
-        alternative.addEventListener('click', function () {
-            if (currentQuestion.answer == index) {
-                console.log('Correct!:D');
-                alternative.classList.add('correct');
-                setTimeout(() => {
-                    alternative.classList.remove('correct');
-                }, 2000);
-                incrementScore();
-            } else {
-                console.log('Incorrect:(');
-                alternative.classList.add('incorrect');
-                setTimeout(() => {
-                    alternative.classList.remove('incorrect');
-                }, 2000);
-                decreaseScore();
-            }
+        alternative.addEventListener('click', () => {
+            handleAnswerClick(index);
+            return;
         });
     });
 }
+
 
 function incrementScore() {
     const displayScore = document.querySelector('#score');
@@ -120,13 +127,15 @@ function decreaseScore() {
 }
 
 function nextQuestion() {
+
     if (questionCounter >= MAX_QUESTIONS) {
         console.log('end of game');
         return;
+    } else {
+        getQuestion(questions[questionCounter]);
+        questionCounter++;
+        console.log(questionCounter);
     }
-
-    getQuestion(questions[questionCounter]);
-    questionCounter++;
 }
 
 /* 
