@@ -2,6 +2,7 @@ let finalScore = document.getElementById('finalScore');
 let scoreMessage = document.getElementById('score-message');
 let recentScore = localStorage.getItem('recentScore');
 
+/* line of code from https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2735s, slightly modified */
 finalScore.innerHTML = recentScore;
 
 if (recentScore <= 30) {
