@@ -111,20 +111,18 @@ Below, I present the features that with more time and knowledge could be impleme
 ### Validator Testing
 
 * HTML
-    * The official W3C validator returned no errors.
+    * The official **[W3C validator](https://validator.w3.org/)** returned no errors.
 
 ![Screenshot of W3C validator result]()
 
 * CSS
-   * The official Jigsaw validator returned no errors. 
+  * The official **[Jigsaw validator](https://jigsaw.w3.org/css-validator/)** returned no errors.
 
 ![Screenshot of jigsaw validator result]()
 
-* JSHint
+* **[JSHint](https://jshint.com/)** returned no errors.
 
 ### Unfixed Bugs
-
-* Regarding the question alternatives, not the entire box container can be clicked to generate an answer. I did not manage to solve this in time without breaking the code, but the added pointer shown when hovering over where the alternative is clickable adds an element of clarity. 
 
 ## Deployment
 
