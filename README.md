@@ -33,7 +33,7 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 * **Score Counter**
 
-  * At the top of the question container, the user can keep track of their score. As presented on the home page, a correct answer will give the user 10 points and the score counter will update accordingly (the score counter does not change size even though the presented screenshots make it looks like it does). 
+  * At the top of the question container, the user can keep track of their score. As presented on the home page, a correct answer will give the user 10 points and the score counter will update accordingly.
 
 ![Screenshot of score counter](/documentation/scorecounter.png)
 
@@ -63,12 +63,46 @@ Below, I present the features that with more time and knowledge could be impleme
 
 ## Testing
 
+### Manual Testing of Pages
+
+**Home Page:**
+
+| TEST  | PASS |
+| ------------- | ------------- |
+| The purpose of the application is clear  | ✅ |
+| The "Start Quiz" button starts the quiz  | ✅  |
+| The home page is responsive | ✅  |
+
+**Game Page:**
+
+| TEST  | PASS |
+| ------------- | ------------- |
+| A question with four alternatives are displayed | ✅ |
+| It is clear when a button is being hovered |  ✅  |
+| When an alternative is clicked, a color indicates if the answer is correct or incorrect | ✅ |
+| When an alternative is clicked and checked, next question is displayed automatically. | ✅  |
+| The score counter is displayed and updated for correct answers | ✅ |
+| When there are no more questions left, the page relocates to the end page | ✅  |
+| The game page is responsive  | ✅ |
+
+**End Page:**
+
+| TEST  | PASS |
+| ------------- | ------------- |
+| The total score result is displayed |  ✅  |
+| A message is displayed based on the score result(three score intervals with different messages)  |  ✅ |
+|  The "Play Again" button starts the quiz |  ✅ |
+| The "Go Home" button relocates to the home page |  ✅ |
+| The end page is responsive  |  ✅  |
+
+
+
+
 * Browsers
+
    * I opened and played the quiz in Google Chrome. No errors to report. 
    * I opened and played the quiz in Safari. No errors to report. 
    * I opened and played the quiz in Firefox. No errors to report. 
-
-* I have sent the link to the quiz to a few friends for them to open on their devices. I asked if they could play a round and get back to me with feedback with focus on the quiz functionality and if they found it easy to use. They had no errors to report and all found it easy to use. 
 
 * To establish the accessibility of the quiz I ran a devtool lighthouse report that generated the following result:
 
