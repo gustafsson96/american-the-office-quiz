@@ -98,7 +98,6 @@ function getQuestion() {
         acceptingAnswers = true;
 
         questionCounter++;
-        console.log(questionCounter);
     }
 }
 
@@ -115,11 +114,9 @@ function handleAnswerClick(index) {
     const alternative = alternatives[index];
 
     if (currentQuestion.answer == index) {
-        console.log('Correct!:D');
         alternative.classList.add('correct');
         incrementScore();
     } else {
-        console.log('Incorrect:(');
         alternative.classList.add('incorrect');
     }
 
