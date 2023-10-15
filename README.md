@@ -29,25 +29,24 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 #### Quiz Page
 
-![Screenshot of Quiz Page]()
+![Screenshot of Quiz Page](/documentation/gamepage.png)
 
 * **Score Counter**
 
   * At the top of the question container, the user can keep track of their score. As presented on the home page, a correct answer will give the user 10 points and the score counter will update accordingly (the score counter does not change size even though the presented screenshots make it looks like it does). 
 
-![Screenshot of score counter]()
-![Screenshot of updated score counter]()
+![Screenshot of score counter](/documentation/scorecounter.png)
 
 * **Question and Alternatives**
 
   * Below the score counter, the user will find the question with four clickable answer alternatives. If the user answers correctly, the alternative will turn green. If the user answer is incorrect, the alternative will turn red. After an answer alternative is clicked, the next question will show up automatically. There is a total of ten questions and the order in which they appear is random.
 
-![Screenshot of correct answer]()
-![Screenshot of incorrect answer]()
+![Screenshot of correct answer](/documentation/correct.png)
+![Screenshot of incorrect answer](/documentation/incorrect.png)
 
 #### End Page
 
-![Screenshot of end page]()
+![Screenshot of end page](/documentation/endpage.png)
 
 * After the user has answered all ten questions, the end page will show up automatically. The end page will present the final score together with a sentence depending on what that score is (0-30 = "Hm.. not really a fan of The Office?", 40-70 = "You're pretty good at this!", and 80-100 = "Wow! Michael Scott would be proud!")
 * On the end page, the user is also given the alternative to click either "Play Again" to restart the game or "Go Home" to go back to the home page. 
