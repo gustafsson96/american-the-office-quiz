@@ -58,6 +58,8 @@ let score = 0;
 let questionCounter = 0;
 let acceptingAnswers = true;
 
+/* start the quiz */
+/* startQuiz code content from: https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2735s */
 function startQuiz() {
     questionsAvailable = [...questions];
     questionCounter = 0;
@@ -79,6 +81,7 @@ let currentQuestion = shuffledQuestions[questionCounter];
 let question = document.getElementById('question');
 let alternatives = document.querySelectorAll('.choice-container');
 
+/* display a new question or end quiz if there are none */
 function getQuestion() {
     if (questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('recentScore', score);
@@ -107,6 +110,7 @@ alternatives.forEach((alternative, index) => {
     });
 });
 
+/* check answer status and implement class accordingly */
 function handleAnswerClick(index) {
     const alternative = alternatives[index];
 
@@ -125,12 +129,15 @@ function handleAnswerClick(index) {
     }, 1000);
 }
 
+/* increment score by 10 for correct answer */
 function incrementScore() {
     score += 10;
     const displayScore = document.querySelector('#score');
     displayScore.innerHTML = score;
 }
 
+
+/* relocate to end.html when quiz is over */
 function endOfQuiz() {
     console.log('end of quiz!');
     return window.location.replace("/end.html");

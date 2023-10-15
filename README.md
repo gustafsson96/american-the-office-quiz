@@ -97,12 +97,14 @@ Below, I present the features that with more time and knowledge could be impleme
 
 I deployed the application to GitHub pages using the following process:
 
-*1. *Open up the GitHub repositry for the project.
-2. Click the Settings tab and navigate to Pages in the menu to the left of the screen.
-3. Under Branch, select "main" in the dropdown menu and click Save.
-4. Refresh page to find the link to the live site at the top of the GitHub Pages section.
+* Open up the GitHub repositry for the project.
+* Click the Settings tab and navigate to Pages in the menu to the left of the screen.
+* Under Branch, select "main" in the dropdown menu and click Save.
+* Refresh page to find the link to the live site at the top of the GitHub Pages section.
 
 **Link to the live quiz: <https://gustafsson96.github.io/american-the-office-quiz/>**
+
+To fork or clone the project, use the following steps:
 
 ### Forking
 
