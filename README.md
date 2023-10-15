@@ -97,7 +97,7 @@ Below, I present the features that with more time and knowledge could be impleme
 
 I deployed the application to GitHub pages using the following process:
 
-1. Open up the GitHub repositry for the project.
+*1. *Open up the GitHub repositry for the project.
 2. Click the Settings tab and navigate to Pages in the menu to the left of the screen.
 3. Under Branch, select "main" in the dropdown menu and click Save.
 4. Refresh page to find the link to the live site at the top of the GitHub Pages section.
@@ -106,7 +106,19 @@ I deployed the application to GitHub pages using the following process:
 
 ### Forking
 
+* Log in to GitHub, search for the reopsitory name, and navigate to its main page.
+* Locate the "Fork" button and click it.
+* Add a description (optional).
+* Click the green "Create fork" button.
+
 ### Cloning
+
+* Log in to GitHub and search for the repository name and navigate to its main page.
+* Click the green "<> Code" button.
+* Copy the URL (if using HTTPS, SSH and GitHub CLI are also available options).
+* Open the terminal in your IDE and change the location to where you want the cloned repository.
+* Type "git clone" followed by the copied URL from the GitHub repo.
+* Press enter.
 
 ## Credits
 
