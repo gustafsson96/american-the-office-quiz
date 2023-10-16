@@ -15,8 +15,6 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 ### Color Scheme
 
-### Font
-
 ## Features
 
 ### Existing Features
