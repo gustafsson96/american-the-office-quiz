@@ -67,7 +67,7 @@ function startQuiz() {
     getQuestion();
 }
 
-/* shuffles the question array */
+/* shuffles the question array using the fisher-yates algorithm */
 function shuffleQuestions(questionarray) {
     for (let i = questionarray.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -136,7 +136,6 @@ function incrementScore() {
 
 /* relocate to end.html when quiz is over */
 function endOfQuiz() {
-    console.log('end of quiz!');
     return window.location.replace("/end.html");
 }
 
