@@ -4,7 +4,7 @@ This is a quiz based on the American sitcom The Office. It is therefore targeted
 
 **Link to the live quiz: **
 
-![Screenshot of AmIResponsive]()
+![Screenshot of AmIResponsive](/documentation/AmiResponsive.png)
 *Screenshot from [Am I Responsive](https://ui.dev/amiresponsive)*
 
 ## Planning
@@ -99,8 +99,11 @@ Below, I present the features that with more time and knowledge could be impleme
 | The "Go Home" button relocates to the home page |  ✅ |
 | The end page is responsive  |  ✅  |
 
+**Other tests:**
 
-
+| TEST  | PASS |
+| ------------- | ------------- |
+| The 404 page displays when page is not found  |  ✅  |
 
 * Browsers
    * I opened and played the quiz in Google Chrome. No errors to report.
