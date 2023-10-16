@@ -102,6 +102,7 @@ function getQuestion() {
     }
 }
 
+/* displays number of current question */
 function incrementQuestionCounter() {
     const questionNumber = document.getElementById('questioncounter');
     questionNumber.innerHTML = questionCounter;
