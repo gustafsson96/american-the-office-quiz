@@ -2,7 +2,7 @@
 
 This is a quiz based on the American sitcom The Office. It is therefore targeted towards people who have watched the tv show, especially those who are fans, as it allows them to test their knowledge. The site is easy to use and the user gets their score presented to them both during and after the quiz, making it a great opportunity for the competitive to challenge their friends to see who can get the highest result. 
 
-**Link to the live quiz: **
+**Link to the live quiz: ** ()
 
 ![Screenshot of AmIResponsive](/documentation/AmiResponsive.png)
 *Screenshot from [Am I Responsive](https://ui.dev/amiresponsive)*
@@ -129,16 +129,34 @@ I also ran lighthouse reports for the start page and end page that both generate
 * HTML
   * The official **[W3C validator](https://validator.w3.org/)** returned no errors.
 
-![Screenshot of W3C validator result]()
+![screenshot of index.html validator result](/documentation/testing/indexhtml-validation.png)
+
+![screenshot of game.html validator result](/documentation/testing/gamehtml-validation.png)
+
+![screenshot of end.html validator result](/documentation/testing/endhtml-validation.png)
 
 * CSS
   * The official **[Jigsaw validator]()** returned no errors.
 
-![Screenshot of jigsaw validator result]()
+![screenshot of style.css validator result](/documentation/testing/stylecss-validation.png)
 
+![screenshot of game.css validator result](/documentation/testing/gamecss-validation.png)
+
+* JavaScript
+* 
 * **[JSHint](https://jshint.com/)** returned no errors.
 
+![screenshot of script.js validator result](/documentation/testing/scriptjs-jshint.png)
+
+![screenshot of end.js validator result](/documentation/testing/endjs-jshint.png)
+
+### Fixed Bugs
+
+* When first deployd, the end page would not display in any browser. Fixed by deleting inital slash (/) in url path.
+
 ### Unfixed Bugs
+
+There are no known unfixed bugs to present.
 
 ## Deployment
 
