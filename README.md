@@ -119,7 +119,7 @@ Below, I present the features that with more time and knowledge could be impleme
 ![Screenshot of W3C validator result]()
 
 * CSS
-  * The official **[Jigsaw validator](https://jigsaw.w3.org/css-validator/)** returned no errors.
+  * The official **[Jigsaw validator]()** returned no errors.
 
 ![Screenshot of jigsaw validator result]()
 
