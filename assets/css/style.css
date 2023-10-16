@@ -2,13 +2,13 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     padding: 0;
     margin: 0;
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -54,6 +54,9 @@ h1 {
 }
 
 .btn-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-weight: bold;
     font-size: 2rem;
     padding: 1rem 0;
@@ -69,11 +72,18 @@ h1 {
 /* extra styling to end page */
 
 .btn-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-weight: bold;
     font-size: 2rem;
     padding: 1rem 0;
     max-width: 90%;
     min-width: 20rem;
+}
+
+.btn-icon {
+    margin-left: 1rem;
 }
 
 #score-message {
