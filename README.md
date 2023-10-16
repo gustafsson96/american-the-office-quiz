@@ -191,7 +191,15 @@ To fork or clone the project, use the following steps:
 
 ### Content
 
-* [This YouTube Video](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=12s) by YouTube channel "Brian Design".
+* **[This YouTube Video](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=12s)** by YouTube channel "Brian Design" helped me understand what variables and functionality would be necessary to create the quiz. The JS function to start the quiz is also taken from here.
+
+* I read **[the Fisher–Yates shuffle Wikipedia page](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)** and **[this geeksforgeeks article](https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/)** to learn about the Fisher–Yates shuffle algorithm.
+
+* I watched **[this Youtube Video](https://www.youtube.com/watch?v=RswgVWKJRLM&t=13s)** by YouTube channel "Zenva" to better understand how to create a function to check the user's answer.
+
+* **[This article](https://www.javascripttutorial.net/javascript-dom/javascript-classlist/)** from JavaScript Tutorial helped me understand the classList property better (to implement in the check answer function).
+
+* **[This stack overflow post](https://stackoverflow.com/questions/27674425/how-to-open-another-html-page-using-javascript)** was read to understand how to open a new html page using JavaScript (to display end page at the end of quiz.)
 
 ### Media
 
