@@ -2,7 +2,7 @@
 
 This is a quiz based on the American sitcom The Office. It is therefore targeted towards people who have watched the tv show, especially those who are fans, as it allows them to test their knowledge. The site is easy to use and the user gets their score presented to them both during and after the quiz, making it a great opportunity for the competitive to challenge their friends to see who can get the highest result. 
 
-**Link to the live quiz: ** ()
+**Link to the live site: [The Office Quiz](https://gustafsson96.github.io/american-the-office-quiz/)**
 
 ![Screenshot of AmIResponsive](/documentation/AmiResponsive.png)
 *Screenshot from [Am I Responsive](https://ui.dev/amiresponsive)*
@@ -106,6 +106,7 @@ Below, I present the features that with more time and knowledge could be impleme
 | TEST  | PASS |
 | ------------- | ------------- |
 | The 404 page displays when page is not found  |  ✅  |
+| The 404 page contains a link back to the start page  |  ✅  |
 
 * Browsers
 
