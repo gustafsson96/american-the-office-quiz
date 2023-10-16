@@ -44,6 +44,11 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 ![Screenshot of correct answer](/documentation/correct.png)
 ![Screenshot of incorrect answer](/documentation/incorrect.png)
 
+* **Question Counter**
+  
+* At the bottom of the questions container, the number of the current question is displayed. 
+* ![Screenshot of question counter](/documentation/questioncounter.png)
+
 #### End Page
 
 ![Screenshot of end page](/documentation/endpage.png)
@@ -54,8 +59,6 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 ### Features to Implement
 
 Below, I present the features that with more time and knowledge could be implemented to improve the quiz further.
-
-* **Question counter** - A function could be added to display which question the user is currently on (like 5 out of 10).
 
 * **Different levels** - At the home page, the user could be given the option to pick their preferred level (such as beginner, intermediate, advanced). For this, more questions would have to be added as well. 
 
