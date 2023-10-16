@@ -143,7 +143,7 @@ function incrementScore() {
 
 /* relocate to end.html when quiz is over */
 function endOfQuiz() {
-    return window.location.replace("/end.html");
+    return window.location.replace("end.html");
 }
 
 startQuiz();

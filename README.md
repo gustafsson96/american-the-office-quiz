@@ -15,6 +15,10 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 ### Color Scheme
 
+I used **[coolors](https://coolors.co/)** to determine the color scheme of the project. To match the content with the background image was a prioritization.
+
+![Screenshot of colorscheme](/documentation/colorscheme.png)
+
 ## Features
 
 ### Existing Features
@@ -97,20 +101,28 @@ Below, I present the features that with more time and knowledge could be impleme
 | The "Go Home" button relocates to the home page |  ✅ |
 | The end page is responsive  |  ✅  |
 
-**Other tests:**
+**404 Page:**
 
 | TEST  | PASS |
 | ------------- | ------------- |
 | The 404 page displays when page is not found  |  ✅  |
 
 * Browsers
-   * I opened and played the quiz in Google Chrome. No errors to report.
-   * I opened and played the quiz in Safari. No errors to report.
-   * I opened and played the quiz in Firefox. No errors to report.
 
-* To establish the accessibility of the quiz I ran a devtool lighthouse report that generated the following result:
+I opened and played the quiz in the following browsers with no errors to report:
+   * Google Chrome
+   * Safari
+   * Mozilla Firefox
 
-![Screenshot of lighthouse report]()
+* To test the performance and accessibility of the quiz I ran devtool lighthouse reports that generated the following result:
+
+![Screenshot of lighthouse report mobile](/documentation/testing/lighthouse-mobile.png)
+*Mobile*
+
+![Screenshot of lighthouse report desktop](/documentation/testing/lighthouse-desktop.png)
+*Desktop*
+
+I also ran lighthouse reports for the start page and end page that both generated an all green result.
 
 ### Validator Testing
 
