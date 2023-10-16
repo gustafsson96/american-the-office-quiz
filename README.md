@@ -29,7 +29,7 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 #### Quiz Page
 
-![Screenshot of Quiz Page](/documentation/gamepage.png)
+![Screenshot of Quiz Page](/documentation/quizpage.png)
 
 * **Score Counter**
 
@@ -46,8 +46,9 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 * **Question Counter**
   
-* At the bottom of the questions container, the number of the current question is displayed. 
-* ![Screenshot of question counter](/documentation/questioncounter.png)
+  * At the bottom of the questions container, the number of the current question is displayed.
+
+![Screenshot of question counter](/documentation/questioncounter.png)
 
 #### End Page
 
@@ -102,10 +103,9 @@ Below, I present the features that with more time and knowledge could be impleme
 
 
 * Browsers
-
-   * I opened and played the quiz in Google Chrome. No errors to report. 
-   * I opened and played the quiz in Safari. No errors to report. 
-   * I opened and played the quiz in Firefox. No errors to report. 
+   * I opened and played the quiz in Google Chrome. No errors to report.
+   * I opened and played the quiz in Safari. No errors to report.
+   * I opened and played the quiz in Firefox. No errors to report.
 
 * To establish the accessibility of the quiz I ran a devtool lighthouse report that generated the following result:
 
@@ -114,7 +114,7 @@ Below, I present the features that with more time and knowledge could be impleme
 ### Validator Testing
 
 * HTML
-    * The official **[W3C validator](https://validator.w3.org/)** returned no errors.
+  * The official **[W3C validator](https://validator.w3.org/)** returned no errors.
 
 ![Screenshot of W3C validator result]()
 
