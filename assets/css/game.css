@@ -65,13 +65,16 @@ h1 {
 
     #question {
         font-size: 1.5rem;
-        font-weight: bold;
         margin-bottom: 1rem;
     }
 
 }
 
 @media screen and (max-width: 415px) {
+
+    #question {
+        font-size: 0.9rem;
+    }
 
     .choice-container {
         min-width: 13rem;
