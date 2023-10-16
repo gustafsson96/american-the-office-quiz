@@ -98,7 +98,13 @@ function getQuestion() {
         acceptingAnswers = true;
 
         questionCounter++;
+        incrementQuestionCounter();
     }
+}
+
+function incrementQuestionCounter() {
+    const questionNumber = document.getElementById('questioncounter');
+    questionNumber.innerHTML = questionCounter;
 }
 
 alternatives.forEach((alternative, index) => {

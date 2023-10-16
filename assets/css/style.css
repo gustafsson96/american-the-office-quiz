@@ -152,21 +152,14 @@ h1 {
 
 }
 
+.questioncounter-prefix {
+    padding-right: 0.3rem;
+}
+
 #questioncounter-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: orange;
-}
-
-.first {
-    border: solid 2px orange;
-}
-
-.second {
-    border: solid 2px red;
-}
-
-.third {
-    border: solid 2px green;
+    font-weight: bold;
 }
