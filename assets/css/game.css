@@ -73,7 +73,7 @@ h1 {
 @media screen and (max-width: 415px) {
 
     #question {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 
     .choice-container {
