@@ -33,31 +33,35 @@ I used **[coolors](https://coolors.co/)** to determine the color scheme of the p
 
 ![Screenshot of Quiz Page](/documentation/quizpage.png)
 
-* **Score Counter**
+* The game page displays a question with four clickable alternatives. When the user hovers over an alternative, an orange border is displayed.
 
-  * At the top of the question container, the user can keep track of their score. As presented on the home page, a correct answer will give the user 10 points and the score counter will update accordingly.
+**Score Counter:**
 
 ![Screenshot of score counter](/documentation/scorecounter.png)
 
-* **Question and Alternatives**
+* At the top of the question container, the user can keep track of their score. As presented on the home page, a correct answer will give the user 10 points and the score counter will be updated accordingly.
 
-  * Below the score counter, the user will find the question with four clickable answer alternatives. If the user answers correctly, the alternative will turn green. If the user answer is incorrect, the alternative will turn red. After an answer alternative is clicked, the next question will show up automatically. There is a total of ten questions and the order in which they appear is random.
+**Question and Alternatives:**
 
 ![Screenshot of correct answer](/documentation/correct.png)
+
 ![Screenshot of incorrect answer](/documentation/incorrect.png)
 
-* **Question Counter**
-  
-  * At the bottom of the questions container, the number of the current question is displayed.
+* Below the score counter, the user will find the question with four clickable answer alternatives. If the user answers correctly, the alternative will turn green. If the user answer is incorrect, the alternative will turn red. After an answer alternative is clicked, the next question will show up automatically. There is a total of ten questions and the order in which they appear is random.
+
+**Question Counter:**
 
 ![Screenshot of question counter](/documentation/questioncounter.png)
+
+* At the bottom of the questions container, the number of the current question is displayed.
 
 #### End Page
 
 ![Screenshot of end page](/documentation/endpage.png)
 
-* After the user has answered all ten questions, the end page will show up automatically. The end page will present the final score together with a sentence depending on what that score is (0-30 = "Hm.. not really a fan of The Office?", 40-70 = "You're pretty good at this!", and 80-100 = "Wow! Michael Scott would be proud!")
-* On the end page, the user is also given the alternative to click either "Play Again" to restart the game or "Go Home" to go back to the home page. 
+* After the user has answered all ten questions, the end page will show up automatically. The end page will present the final score together with a sentence depending on what that score is (0-30 = "Hm.. not really a fan of The Office?", 40-70 = "You're pretty good at this!", and 80-100 = "Wow! Michael Scott would be proud!").
+* 
+* On the end page, the user is also given the alternative to click either "Play Again" to restart the game or "Go Home" to go back to the home page.
 
 ### Features to Implement
 
@@ -86,8 +90,9 @@ Below, I present the features that with more time and knowledge could be impleme
 | A question with four alternatives are displayed | ✅ |
 | It is clear when a button is being hovered |  ✅  |
 | When an alternative is clicked, a color indicates if the answer is correct or incorrect | ✅ |
-| When an alternative is clicked and checked, next question is displayed automatically. | ✅  |
+| When an alternative is clicked and checked, next question is displayed automatically | ✅  |
 | The score counter is displayed and updated for correct answers | ✅ |
+| The number of the current question (out of 10) is displayed below the question alternatives | ✅  |
 | When there are no more questions left, the page relocates to the end page | ✅  |
 | The game page is responsive  | ✅ |
 
@@ -114,6 +119,8 @@ I opened and played the quiz in the following browsers with no errors to report:
    * Google Chrome
    * Safari
    * Mozilla Firefox
+
+### Lighthouse Report
 
 * To test the performance and accessibility of the quiz I ran devtool lighthouse reports that generated the following result:
 
@@ -144,12 +151,14 @@ I also ran lighthouse reports for the start page and end page that both generate
 ![screenshot of game.css validator result](/documentation/testing/gamecss-validation.png)
 
 * JavaScript
-* 
+
 * **[JSHint](https://jshint.com/)** returned no errors.
 
 ![screenshot of script.js validator result](/documentation/testing/scriptjs-jshint.png)
+*script.js*
 
 ![screenshot of end.js validator result](/documentation/testing/endjs-jshint.png)
+*end.js*
 
 ### Fixed Bugs
 
