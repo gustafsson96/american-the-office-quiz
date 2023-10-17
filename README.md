@@ -15,7 +15,7 @@ At the planning stage of this project, I used pen and paper to sketch ideas. As 
 
 ### Color Scheme
 
-I used **[coolors](https://coolors.co/)** to determine the color scheme of the project. To match the content with the background image was a prioritization.
+I used **[coolors](https://coolors.co/)** to determine the color scheme of the project. Matching the content with the background image was a prioritization.
 
 ![Screenshot of colorscheme](/documentation/colorscheme.png)
 
@@ -27,7 +27,7 @@ I used **[coolors](https://coolors.co/)** to determine the color scheme of the p
 
 ![Screenshot of home page](/documentation/home-page-screenshot.png)
 
-* The home page consists of a heading, a short but clear description of the quiz, and a clickable "START QUIZ" button that will start the game. The background image is colorful and shows characters from the tv show, and the container holding the content has therefore been kept simple to make it easy to read.
+* The home page consists of a heading, a short but clear description of the quiz, and a clickable "START QUIZ" button that will start the game. The background image is colorful and shows characters from the tv show, and the container holding the content has therefore been kept simple to make it easy to read (has been updated with font awesome icons since screenshot was taken).
 
 #### Quiz Page
 
@@ -41,7 +41,7 @@ I used **[coolors](https://coolors.co/)** to determine the color scheme of the p
 
 * At the top of the question container, the user can keep track of their score. As presented on the home page, a correct answer will give the user 10 points and the score counter will be updated accordingly.
 
-**Question and Alternatives:**
+**Correct and Incorrect Alternatives:**
 
 ![Screenshot of correct answer](/documentation/correct.png)
 
@@ -60,8 +60,8 @@ I used **[coolors](https://coolors.co/)** to determine the color scheme of the p
 ![Screenshot of end page](/documentation/endpage.png)
 
 * After the user has answered all ten questions, the end page will show up automatically. The end page will present the final score together with a sentence depending on what that score is (0-30 = "Hm.. not really a fan of The Office?", 40-70 = "You're pretty good at this!", and 80-100 = "Wow! Michael Scott would be proud!").
-* 
-* On the end page, the user is also given the alternative to click either "Play Again" to restart the game or "Go Home" to go back to the home page.
+
+* On the end page, the user is also given the alternative to click either "Play Again" to restart the game or "Go Home" to go back to the home page (has been updated with font awesome icons since screenshot was taken).
 
 ### Features to Implement
 
@@ -87,7 +87,7 @@ Below, I present the features that with more time and knowledge could be impleme
 
 | TEST  | PASS |
 | ------------- | ------------- |
-| A question with four alternatives are displayed | ✅ |
+| A question and four answer alternatives are displayed | ✅ |
 | It is clear when a button is being hovered |  ✅  |
 | When an alternative is clicked, a color indicates if the answer is correct or incorrect | ✅ |
 | When an alternative is clicked and checked, next question is displayed automatically | ✅  |
@@ -113,7 +113,7 @@ Below, I present the features that with more time and knowledge could be impleme
 | The 404 page displays when page is not found  |  ✅  |
 | The 404 page contains a link back to the start page  |  ✅  |
 
-* Browsers
+### Browsers
 
 I opened and played the quiz in the following browsers with no errors to report:
    * Google Chrome
@@ -151,8 +151,7 @@ I also ran lighthouse reports for the start page and end page that both generate
 ![screenshot of game.css validator result](/documentation/testing/gamecss-validation.png)
 
 * JavaScript
-
-* **[JSHint](https://jshint.com/)** returned no errors.
+  * **[JSHint](https://jshint.com/)** returned no errors.
 
 ![screenshot of script.js validator result](/documentation/testing/scriptjs-jshint.png)
 *script.js*
@@ -162,7 +161,9 @@ I also ran lighthouse reports for the start page and end page that both generate
 
 ### Fixed Bugs
 
-* When first deployd, the end page would not display in any browser. Fixed by deleting inital slash (/) in url path.
+* The end page would not display in any browser. Fixed by deleting inital slash (/) in url path.
+  
+* The console was throwing an error regarding undefined variables when restarting the quiz. Fixed by removing the script.js script tags from index.html, as it only needs to be loaded for the game and end pages.
 
 ### Unfixed Bugs
 
@@ -213,6 +214,6 @@ To fork or clone the project, use the following steps:
 
 ### Media
 
-* The background image displayed on all three pages (home page, game page, and end page) is taken from [Rotten Tomatoes](https://www.rottentomatoes.com/tv/the_office).
+* The background image displayed on all three pages (home page, game page, and end page) is taken from **[Rotten Tomatoes](https://www.rottentomatoes.com/tv/the_office)**.
 
 
